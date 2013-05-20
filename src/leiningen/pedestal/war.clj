@@ -114,12 +114,6 @@
       (concat [(get-in project [:pedestal :war-resources-path] "war-resources")]
               (get-in project [:pedestal :war-resource-paths])))))
 
-(defn web-inf-resources-paths [project]
-  (keep identity
-    (distinct
-      (concat [(get-in project [:pedestal :web-inf-resources-path] "web-inf-resources")]
-              (get-in project [:pedestal :web-inf-resource-paths])))))
-
 (defn in-war-path [war-path root file]
   (str war-path
        (-> (.toURI (io/file root))
@@ -156,8 +150,6 @@
       (dir-entry war-stream project "WEB-INF/classes/" path))
     (doseq [path (war-resources-paths project)]
       (dir-entry war-stream project "" path))
-    (doseq [path (web-inf-resources-paths project)]
-      (dir-entry war-stream project "WEB-INF/" path))
     (doseq [pp-fn postprocess-fns]
       (pp-fn project war-stream))
     war-stream))
