@@ -36,6 +36,10 @@ FIXME: and add an example usage that actually makes sense:
 
     $ lein pedestal [war | uberwar | help]
 
+You can supply a war/jar name from the command line:
+
+    $ lein pedestal uberwar my-project.war
+
 ## License
 
 Copyright Paul deGrandis © 2013
