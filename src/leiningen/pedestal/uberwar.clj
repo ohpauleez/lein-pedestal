@@ -19,7 +19,7 @@
 (defn uberwar
   "Create a $PROJECT-$VERSION.war file with all the dependencies."
   ([project]
-   (uberwar project (get-in project [:predestal :uberwar-name]
+   (uberwar project (get-in project [:pedestal :uberwar-name]
                             (war/war-name project "-standalone"))))
   ([project uberwar-name-str]
    (let [war-path (war/war-file-path project uberwar-name-str)]

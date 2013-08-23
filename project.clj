@@ -1,4 +1,4 @@
-(defproject ohpauleez/lein-pedestal "0.1.0-beta9"
+(defproject ohpauleez/lein-pedestal "0.1.0-beta10"
   :description "Pedestal plugin for Leiningen"
   :url "https://github.com/ohpauleez/lein-pedestal"
   :license {:name "Eclipse Public License"
