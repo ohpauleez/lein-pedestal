@@ -14,7 +14,7 @@ These are the available options and some of their defaults.  In your `project.cl
            :url-pattern "/*"
            :web-xml "war-resources/WEB-INF/web.xml" ;; optional: use this instead of generating
            :war-resource-paths ["war-resources"]
-           :manifest {"Created-By" "Joe Comany"} ;; merged into defaults
+           :manifest {"Created-By" "Joe Company"} ;; merged into defaults
            :war-name "blah.war" ;; defaults to project name and version
            :uberwar-name "blah-standalone.war" ;; defaults to project name and version -standalone
            :war-exclusions [#"immutant\.init\.clj" #"^.+/web\.xml$" #"^.+/myapp-.+.conf$" #"^.+/logback-test\.xml$" ] ;; optional: a vector of regex strings
