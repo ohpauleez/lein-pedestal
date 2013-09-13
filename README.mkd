@@ -6,10 +6,10 @@ Please take a look in the code until real documentation is written.
 
 These are the available options and some of their defaults.  In your `project.clj`:
 ```clojure
-:pedestal {:servlet-description "Pedestal HTTP Servlet"
-           :servlet-display-name "Pedestal HTTP Servlet"
-           :servlet-name "PedestalServlet"
-           :servlet-class "io.pedestal.servlet.ClojureVarServlet"
+:pedestal {:servlet-description "Pedestal HTTP Servlet" ;; default if not supplied
+           :servlet-display-name "Pedestal HTTP Servlet" ;; default if not supplied
+           :servlet-name "PedestalServlet" ;; default if not supplied
+           :servlet-class "io.pedestal.servlet.ClojureVarServlet" ;; default if not supplied
            :server-ns "YOU NEED TO SUPPLY THIS"
            :url-pattern "/*"
            :web-xml "war-resources/WEB-INF/web.xml" ;; optional: use this instead of generating
