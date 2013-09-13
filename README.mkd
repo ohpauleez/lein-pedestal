@@ -9,7 +9,7 @@ These are the available options and some of their defaults.  In your `project.cl
 :pedestal {:servlet-description "Pedestal HTTP Servlet"
            :servlet-display-name "Pedestal HTTP Servlet"
            :servlet-name "PedestalServlet"
-           :servlet-class "io.pedestal.servletClojureVarServlet"
+           :servlet-class "io.pedestal.servlet.ClojureVarServlet"
            :server-ns "YOU NEED TO SUPPLY THIS"
            :url-pattern "/*"
            :web-xml "war-resources/WEB-INF/web.xml" ;; optional: use this instead of generating
